@@ -9,21 +9,10 @@
     });
 
     $(function() {
-      $('.hero-section').vegas({
+      $('.menu-section').vegas({
           slides: [
               { src: 'https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/U6GPDHSY9JN01589912855861.jpg' },
 			  { src: 'https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/U6GPDHSY9JN01589912855861.jpg' },
-          ],
-          timer: false,
-          animation: 'kenburns',
-      });
-    });
-	
-	$(function() {
-      $('.menu-section').vegas({
-          slides: [
-              { src: 'https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/FJPT5455KR5K1589912863345.jpg' },
-			  { src: 'https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/FJPT5455KR5K1589912863345.jpg' },
           ],
           timer: false,
           animation: 'kenburns',

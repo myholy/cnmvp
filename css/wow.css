@@ -532,16 +532,16 @@ strong {
   margin-TOP: 160px;
   }
 
-  .shake-animation {
+.shake-animation {
   bottom: 15px;
   font-size: 30px;
   animation: shake 0.8s;
   animation-iteration-count: infinite;
-  z-index: 999 ;
+  z-index: 999;
   position: absolute;
   }
   
-  @keyframes shake {
+@keyframes shake {
   0% { transform: translateY(0); }
   25% { transform: translateY(-1px); }
   50% { transform: translateY(1px); }
