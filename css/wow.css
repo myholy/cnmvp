@@ -4,11 +4,11 @@
 :root {
   --white-color:                  #ffffff;
   --primary-color:                #de6f00;              /*稍深*/
-  --secondary-color:              #ff8000; 				/*#00ccff*/
+  --secondary-color:              #ff9100; 				/*#00ccff*/
   --custom-btn-bg-color:          #de6f00;
-  --custom-btn-bg-hover-color:    #ff8000;
+  --custom-btn-bg-hover-color:    #ff9100;
   --bac-color:                    #717275;
-  --link-hover-color:             #ff8000;           	/*#E76F51*/
+  --link-hover-color:             #ff9100;           	/*#E76F51*/
   --reviews-color:                #380C06;
 
   --body-font-family:             'Plus Jakarta Sans', sans-serif;
