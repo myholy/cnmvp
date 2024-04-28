@@ -11,8 +11,8 @@
     $(function() {
       $('.menu-section').vegas({
           slides: [
-              { src: 'https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/VHAUMBN792L91589912865216.jpg' },
-			  { src: 'https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/VHAUMBN792L91589912865216.jpg' },
+              { src: 'https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/U6GPDHSY9JN01589912855861.jpg' },
+			  { src: 'https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/U6GPDHSY9JN01589912855861.jpg' },
           ],
           timer: false,
           animation: 'kenburns',
