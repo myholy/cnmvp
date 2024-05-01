@@ -151,19 +151,19 @@ canvas {
     margin:0;
 }
 .bg {
-	z-index : 1;
     position : absolute;
 	top: 0;
 	left: 0;
 	right: 0;
-    bottom: 0
+    bottom: 0;
+	z-index:-1;
 }
 
 .timeline {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
-  z-index: 999;
+  z-index:1;
 }
 
 .timeline::after {
