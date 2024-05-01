@@ -149,6 +149,7 @@ strong {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
+  z-index: 999;
 }
 
 .timeline::after {
