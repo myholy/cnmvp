@@ -28,12 +28,12 @@ canvas {
 	opacity: 1;
 }
 .loee {
-	bottom: -5%;
+	bottom: -3%;
     z-index : 1;
 	position: absolute;
 }
 .INTER {
-	bottom: 21%;
+	bottom: 22%;
     z-index : 1;
 	position: absolute;
 }
@@ -63,52 +63,35 @@ canvas {
 #shape {
   stroke-width: 6px;
   fill: transparent;
-  stroke: #ff875e;
+  stroke: #ff6600;
   stroke-dasharray: 85 400;
   stroke-dashoffset: -220;
   transition: 1s all ease;
+}
+.svg-wrapper:hover #shape {
+  stroke-dasharray: 50 0;
+  stroke-width: 3px;
+  stroke-dashoffset: 0;
+  stroke: #ff6600;
 }
 #text {
   margin-top: -35px;
   text-align: center;
 }
 #text a {
-  color: #ff875e;
+  color: #ff6600;
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 #text a:hover {
-  color: #ff875e;
+  color: #ff6600;
 }
-.svg-wrapper:hover #shape {
-  stroke-dasharray: 50 0;
-  stroke-width: 3px;
-  stroke-dashoffset: 0;
-  stroke: #ff875e;
-}
-.foot {
-    width: 100%;
-	bottom: 0.5%;
-    z-index : 1;
-	position: absolute;
-	text-align: center;
-}
-.foot p {
-	color: #ff875e;
-	font-size: 0.8em;
-}
-.foot p a {
-	color: #ff7345;
-	text-decoration: none;
-}
-.foot p a:hover {
-	color: #ff875e;
-}
+
 .main-box form a {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
-  color: #ff875e;
+  color: #ff6600;
   font-size: 1.5em;
   text-decoration: none;
   text-transform: uppercase;
@@ -118,13 +101,13 @@ canvas {
   letter-spacing: 4px
 }
 .main-box a:hover {
-  background: #ff875e;
-  color: #fff;
+  background: #ff6600;
+  color: #FFFFFF;
   border-radius: 5px;
-  box-shadow: 0 0 5px #ff875e,
-              0 0 25px #ff875e,
-              0 0 50px #ff875e,
-              0 0 100px #ff875e;
+  box-shadow: 0 0 5px #ff6600,
+              0 0 25px #ff6600,
+              0 0 50px #ff6600,
+              0 0 100px #ff6600;
 }
 .main-box a span {
   position: absolute;
@@ -135,7 +118,7 @@ canvas {
   left: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, transparent, #ff875e);
+  background: linear-gradient(90deg, transparent, #ff9900);
   animation: btn-anim1 1s linear infinite;
 }
 @keyframes btn-anim1 {
@@ -151,7 +134,7 @@ canvas {
   right: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(180deg, transparent, #ff875e);
+  background: linear-gradient(180deg, transparent, #ff9900);
   animation: btn-anim2 1s linear infinite;
   animation-delay: .25s
 }
@@ -168,7 +151,7 @@ canvas {
   right: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(270deg, transparent, #ff875e);
+  background: linear-gradient(270deg, transparent, #ff9900);
   animation: btn-anim3 1s linear infinite;
   animation-delay: .5s
 }
@@ -185,7 +168,7 @@ canvas {
   left: 0;
   width: 2px;
   height: 100%;
-  background: linear-gradient(360deg, transparent, #ff875e);
+  background: linear-gradient(360deg, transparent, #ff9900);
   animation: btn-anim4 1s linear infinite;
   animation-delay: .75s
 }
@@ -196,6 +179,24 @@ canvas {
   50%,100% {
     bottom: 100%;
   }
+}
+.foot {
+    width: 100%;
+	bottom: 0.5%;
+    z-index : 1;
+	position: absolute;
+	text-align: center;
+}
+.foot p {
+	color: #ff6600;
+	font-size: 0.8em;
+}
+.foot p a {
+	color: #ff6600;
+	text-decoration: none;
+}
+.foot p a:hover {
+	color: #ff9900;
 }
 </style>
 
@@ -386,10 +387,10 @@ init();
 <canvas id="logos"></canvas>
 <script type="text/javascript">
 var txt = "MVP公会";
-var txtH = 95;
-var font = "sans-serif";
-var rayColor1 = "#ff875e";
-var rayColor2 = "#ff8c00";
+var txtH = 125;
+var font = "kaiti";
+var rayColor1 = "#ff6600";
+var rayColor2 = "#a6ff00";
 var fade = 1000;
 var canvas = document.getElementById("logos");
 var ctx = canvas.getContext("2d");
@@ -551,7 +552,7 @@ function Ray(row, col, f){
 			<svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
 				<rect id="shape" height="40" width="150" />
 				<div id="text">
-					<a href="https://web.yy.com/channel_share_pc/index.html?sid=31130060&subid=2807124479" target="_blank"><span class="spot"></span>公会YY</a>
+					<a href="https://web.yy.com/channel_share_pc/index.html?sid=31130060&subid=2807124479" target="_blank"><span class="spot"></span>YY频道</a>
 				</div>
 			</svg>
 		</div>
