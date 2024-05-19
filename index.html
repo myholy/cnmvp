@@ -28,12 +28,12 @@ canvas {
 	opacity: 1;
 }
 .loee {
-	bottom: -3%;
+	TOP: 0;
     z-index : 1;
 	position: absolute;
 }
 .INTER {
-	bottom: 22%;
+	top: 50%;
     z-index : 1;
 	position: absolute;
 }
@@ -79,7 +79,7 @@ canvas {
   text-align: center;
 }
 #text a {
-  color: #ff6600;
+  color: #FFFFFF;
   text-decoration: none;
   font-size: 1.1em;
 }
@@ -91,7 +91,7 @@ canvas {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
-  color: #ff6600;
+  color: #FFFFFF;
   font-size: 1.5em;
   text-decoration: none;
   text-transform: uppercase;
@@ -192,11 +192,11 @@ canvas {
 	font-size: 0.8em;
 }
 .foot p a {
-	color: #ff9900;
+	color: RED;
 	text-decoration: none;
 }
 .foot p a:hover {
-	color: #a6ff00;
+	color: #FFFFFF;
 }
 </style>
 
@@ -382,15 +382,17 @@ init();
 </script>
 </DIV>
 
-
 <DIV class="loee">
+<div STYLE="top:45%;position: absolute;left: 50%; transform: translate(-50%,-50%);">
+<H1 STYLE="font-size:2.2em;COLOR:WHITE;">MVP魔兽公会</H1>
+</div>
 <canvas id="logos"></canvas>
 <script type="text/javascript">
-var txt = "MVP公会";
-var txtH = 125;
+var txt = "cnmvp.com";
+var txtH = 90;
 var font = "kaiti";
-var rayColor1 = "#ff6600";
-var rayColor2 = "#a6ff00";
+var rayColor1 = "RED";
+var rayColor2 = "#FFFFFF";
 var fade = 1000;
 var canvas = document.getElementById("logos");
 var ctx = canvas.getContext("2d");
