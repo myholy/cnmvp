@@ -28,12 +28,12 @@ canvas {
 	opacity: 1;
 }
 .loee {
-	TOP: 0;
+	bottom: 0;
     z-index : 1;
 	position: absolute;
 }
 .INTER {
-	top: 50%;
+	bottom: 22%;
     z-index : 1;
 	position: absolute;
 }
@@ -182,7 +182,7 @@ canvas {
 }
 .foot {
     width: 100%;
-	bottom: 0.5%;
+	bottom: 0;
     z-index : 1;
 	position: absolute;
 	text-align: center;
@@ -200,9 +200,9 @@ canvas {
 }
 </style>
 
-
 </head>
 <body>
+
 <DIV class="bg">
 <canvas id="bgg"></canvas>
 <script>
@@ -383,12 +383,12 @@ init();
 </DIV>
 
 <DIV class="loee">
-<div STYLE="top:45%;position: absolute;left: 50%; transform: translate(-50%,-50%);">
-<H1 STYLE="font-size:2.2em;COLOR:WHITE;">MVP魔兽公会</H1>
+<div STYLE="bottom:40%;position: absolute;left: 50%; transform: translate(-50%,-50%);">
+<H1 STYLE="font-size:2.3em;COLOR:WHITE;">MVP魔兽公会</H1>
 </div>
 <canvas id="logos"></canvas>
 <script type="text/javascript">
-var txt = "cnmvp.com";
+var txt = "CNMVP.COM";
 var txtH = 90;
 var font = "kaiti";
 var rayColor1 = "RED";
@@ -534,8 +534,6 @@ function Ray(row, col, f){
 </script>
 </div>
 
-
-
 <DIV class="INTER">
 	<div class="position">
 		<div class="main-box">
@@ -577,9 +575,9 @@ function Ray(row, col, f){
 	</div>
 </div>
 
-
 <DIV class="foot">
   <P>web储存在国外，有些地区连接慢，凑合用，毕竟免费。</BR>Copyright&ensp;©2007-<script>document.write(new Date().getFullYear());</script>&ensp;<a href="https://holynice.com" target="_blank" >Holynice</a>&ensp;,&ensp;All&ensp;Rights&ensp;Reserved.</P>
 </div>
+
 </body>
 </html>
