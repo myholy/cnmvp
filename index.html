@@ -6,36 +6,92 @@
 	<link rel="icon" href="https://myholy.github.io/cnmvp/img/logo128.png" type="image/x-png">
 	<link rel="shortcut icon" href="https://myholy.github.io/cnmvp/img/logo128.png" type="image/x-png">
 	<title>MVP公会丨魔兽世界</title>
-
 <style>
-body {
-	overflow:hidden;
-	background-color: #000000;
-	z-index: -9;
-	display: flex;
-    justify-content: center;
+* {
+  box-sizing: border-box;
+}
+.man {
+  background: #000000;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  z-index: -9;
+}
+.rays {
+  background: #000;
+  background: radial-gradient(#181818, #000);
+  overflow: hidden;
+  z-index: -1;
+}
+.pys {
+  position: absolute;
+  z-index: 0;
+  margin: 0 auto;
 }
 canvas {
-	margin:0;
-	padding:0;
+  display: block;
 }
-.bg {
-	height: 100%;
-	width: 100%;
-	top: 0px;
-	left: 0px;
-	z-index: -1;
-	opacity: 1;
+.mids {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.glow {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(0deg, #000000, #262626);
+  border-radius: 50%;
+}
+.glow::before,
+.glow::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background: linear-gradient(
+    45deg,
+    #ff00ee,
+    #0000ff,
+    #00ff00,
+    #ff0000,
+    #ff00ee,
+    #0000ff,
+    #00ff00,
+    #ffff00,
+    #ff0000
+  );
+  background-size: 400%;
+  max-width: calc(300px + 4px);
+  max-height: calc(300px + 4px);
+  width: calc(300px + 4px);
+  height: calc(300px + 4px);
+  z-index: -1;
+  animation: animate 20s linear infinite;
+  border-radius: 50%;
+}
+.disable-animation::before,
+.disable-animation::after {
+  animation-play-state: paused;
+}
+.glow::after {
+  filter: blur(28px);
 }
 .loee {
-	bottom: 0;
-    z-index : 1;
-	position: absolute;
+  top: 0;
+  margin: 0 auto;
+  overflow: hidden;
+  position: absolute;
+  z-index: 9;
 }
 .INTER {
-	bottom: 22%;
-    z-index : 1;
-	position: absolute;
+  top: 47%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: absolute;
+  z-index: 9;
 }
 .position {
   margin-left: auto;
@@ -181,14 +237,13 @@ canvas {
   }
 }
 .foot {
-    width: 100%;
 	bottom: 0;
-    z-index : 1;
+    z-index : 9;
 	position: absolute;
 	text-align: center;
 }
 .foot p {
-	color: #ff6600;
+	color: #FFFFFF;
 	font-size: 0.8em;
 }
 .foot p a {
@@ -196,205 +251,207 @@ canvas {
 	text-decoration: none;
 }
 .foot p a:hover {
-	color: #FFFFFF;
+	color: #FF6600;
 }
 </style>
-
 </head>
-<body>
+<body class="man">
 
-<DIV class="bg">
-<canvas id="bgg"></canvas>
+<DIV CLASS="rays">
 <script>
-var bgg,
-	ctxb,
-	xwidth,
-	xheight,
-	sizeb,
-	lines,
-	tickb;
+var $ = {};
 
-function line() {
-	this.path = [];
-	this.speed = rand(10, 20);
-	this.count = randInt(10, 30);
-	this.x = xwidth / 2, +1;
-	this.y = xheight / 2 + 1;
-	this.target = {
-		x: xwidth / 2,
-		y: xheight / 2
-	};
-	this.dist = 0;
-	this.angle = 0;
-	this.hue = tickb / 5;
+$.rand = function( min, max ) {
+	return Math.random() * ( max - min ) + min;
+};
+
+$.Part = function() {
+	this.reset();
+};
+
+$.Part.prototype.reset = function() {
+	this.x = 0;
+	this.y = 0;
+	this.z = 0;
+	this.vx = $.rand( -0.5, 0.5 );
+	this.vy = $.rand( -0.5, 0.5 );
+	this.vz = $.rand( -0.25, 0.5 ) ;
+	this.s = 0;
+	this.sx = 0;
+	this.sy = 0;
 	this.life = 1;
-	this.updateAngle();
-	this.updateDist();
-}
+	this.decay = $.rand( 0.005, 0.02 );
+	this.radius = $.rand( 5, 15 );
+	this.sradius = this.radius;
+	this.rradius = this.radius;
+	this.hue = 0;
+	this.alpha = 1;
+	this.angle = 0;
+};
 
-line.prototype.step = function(i) {
-	this.x += Math.cos(this.angle) * this.speed;
-	this.y += Math.sin(this.angle) * this.speed;
-
-	this.updateDist();
-
-	if (this.dist < this.speed) {
-		this.x = this.target.x;
-		this.y = this.target.y;
-		this.changeTarget();
+$.Part.prototype.step = function() {
+	if( $.mouse.down ) {
+		this.vx *= 1.1;
+		this.vy *= 1.1;
+		this.vz *= 1.1;
+	} else {
+		this.vx *= 1.04;
+		this.vy *= 1.04;
+		this.vz *= 1.04;
 	}
+	
+	this.x += this.vx;
+	this.y += this.vy;
+	this.z += this.vz;	
+	this.s = $.fl / ( $.fl + this.z );
+	this.sx = this.x * this.s;
+	this.sy = this.y * this.s;
+	this.sradius = this.radius * this.s;
+	this.rradius = Math.max( 0.0001, this.sradius * this.life );
+	this.angle = Math.atan2( this.sy, this.sx );
+	this.hue = ( this.angle / ( Math.PI * 2 ) ) * 180 + $.tick * 4;	
+	this.alpha = this.life;
 
-	this.path.push({
-		x: this.x,
-		y: this.y
-	});
-	if (this.path.length > this.count) {
-		this.path.shift();
+	if( this.z < $.bounds.z.min ) {
+		this.reset();
+		return;
 	}
-
-	this.life -= 0.001;
-
-	if (this.life <= 0) {
-		this.path = null;
-		lines.splice(i, 1);
+	
+	if( this.life > 0 ) {
+		this.life -= this.decay;	
+	} else {
+		this.reset();
 	}
 };
 
-line.prototype.updateDist = function() {
-	var dx = this.target.x - this.x,
-		dy = this.target.y - this.y;
-	this.dist = Math.sqrt(dx * dx + dy * dy);
-}
-
-line.prototype.updateAngle = function() {
-	var dx = this.target.x - this.x,
-		dy = this.target.y - this.y;
-	this.angle = Math.atan2(dy, dx);
-}
-
-line.prototype.changeTarget = function() {
-	var randStart = randInt(0, 3);
-	switch (randStart) {
-		case 0: // up
-			this.target.y = this.y - sizeb;
-			break;
-		case 1: // right
-			this.target.x = this.x + sizeb;
-			break;
-		case 2: // down
-			this.target.y = this.y + sizeb;
-			break;
-		case 3: // left
-			this.target.x = this.x - sizeb;
-	}
-	this.updateAngle();
+$.Part.prototype.draw = function() {
+	$.ctx.beginPath();
+	$.ctx.arc( this.sx, this.sy, this.rradius * 2, 0, Math.PI * 2 );
+	$.ctx.fillStyle = 'hsla(' + ( this.hue + 60 ) + ', 60%, 30%, ' + this.alpha / 3 + ')';
+	$.ctx.fill();
+	$.ctx.strokeStyle = 'hsla(' + ( this.hue - 60 ) + ', 60%, 30%, ' + this.alpha / 2 + ')';
+	$.ctx.stroke();
+	
+	var angle1 = this.angle + Math.PI / 2,
+		angle2 = this.angle,
+		angle3 = this.angle - Math.PI / 2;
+	
+	$.ctx.beginPath();
+	$.ctx.moveTo( 0, 0 );
+	$.ctx.lineTo( this.sx + Math.cos( angle1 ) * this.rradius, this.sy + Math.sin( angle1 ) * this.rradius );
+	$.ctx.lineTo( this.sx + Math.cos( angle2 ) * this.rradius * 6, this.sy + Math.sin( angle2 ) * this.rradius * 6 );
+	$.ctx.lineTo( this.sx + Math.cos( angle3 ) * this.rradius, this.sy + Math.sin( angle3 ) * this.rradius );
+	$.ctx.closePath();
+	$.ctx.fillStyle = 'hsla(' + this.hue + ', 50%, 30%, ' + this.alpha / 2 + ')';
+	$.ctx.fill();
+	
+	$.ctx.beginPath();
+	$.ctx.moveTo( this.sx + Math.cos( angle2 ) * this.rradius * 6, this.sy + Math.sin( angle2 ) * this.rradius * 6 );
+	$.ctx.lineTo( 0, 0 );
+	$.ctx.strokeStyle = 'hsla(' + this.hue + ', 50%, 30%, ' + this.alpha + ')';
+	$.ctx.stroke();
+	
+	var sparkleRadius = this.rradius * 4;
+	$.ctx.fillStyle = 'hsla(' + ( this.hue + 180 ) + ', 100%, 50%, ' + this.alpha * 2 + ')';
+	$.ctx.fillRect( ( this.sx + $.rand( -sparkleRadius, sparkleRadius ) ), ( this.sy + $.rand( -sparkleRadius, sparkleRadius ) ), 1, 1 );
 };
 
-line.prototype.draw = function(i) {
-	ctxb.beginPath();
-	var rando = rand(0, 10);
-	for (var j = 0, length = this.path.length; j < length; j++) {
-		ctxb[(j === 0) ? 'moveTo' : 'lineTo'](this.path[j].x + rand(-rando, rando), this.path[j].y + rand(-rando, rando));
-	}
-	ctxb.strokeStyle = 'hsla(' + rand(this.hue, this.hue + 30) + ', 80%, 55%, ' + (this.life / 3) + ')';
-	ctxb.lineWidth = rand(0.1, 2);
-	ctxb.stroke();
+$.init = function() {
+	$.canvas = document.createElement( 'canvas' );
+	$.ctx = $.canvas.getContext( '2d' );
+	$.parts = [];
+	$.mouse = {
+		down: 0
+	};
+	document.body.appendChild( $.canvas );
+	$.reset();
+	$.loop();
 };
 
-function rand(min, max) {
-	return Math.random() * (max - min) + min;
-}
-
-function randInt(min, max) {
-	return Math.floor(min + Math.random() * (max - min + 1));
+$.reset = function() {
+	$.tick = 0;
+	$.width = window.innerWidth;
+	$.height = window.innerHeight;
+	$.canvas.width = $.width;
+	$.canvas.height = $.height;
+	$.mouse.down = 0;
+	$.fl = 300;
+	$.bounds = {
+		x: { min: -$.width / 2, max: $.width / 2 },
+		y: { min: -$.height / 2, max: $.height / 2 },
+		z: { min: -$.fl, max: 1000 }
+	};
+	$.parts.length = 0;
 };
 
-function init() {
-	bgg = document.getElementById('bgg');
-	ctxb = bgg.getContext('2d');
-	sizeb = 30;
-	lines = [];
-	reset();
-	loop();
-}
-
-function reset() {
-	xwidth = Math.ceil(window.innerWidth / 2) * 2;
-	xheight = Math.ceil(window.innerHeight / 2) * 2;
-	tickb = 0;
-
-	lines.length = 0;
-	bgg.width = xwidth;
-	bgg.height = xheight;
-}
-
-function create() {
-	if (tickb % 10 === 0) {
-		lines.push(new line());
+$.step = function() {
+	if( $.tick % 2 == 0 ) {
+		if( $.parts.length < 200 ) {
+			$.parts.push( new $.Part() );	
+		}
 	}
-}
-
-function step() {
-	var i = lines.length;
-	while (i--) {
-		lines[i].step(i);
+	var i = $.parts.length;
+	while( i-- ) {
+		$.parts[ i ].step();
 	}
-}
-
-function clear() {
-	ctxb.globalCompositeOperation = 'destination-out';
-	ctxb.fillStyle = 'hsla(0, 0%, 0%, 0.1';
-	ctxb.fillRect(0, 0, xwidth, xheight);
-	ctxb.globalCompositeOperation = 'lighter';
-}
-
-function draw() {
-	ctxb.save();
-	ctxb.translate(xwidth / 2, xheight / 2);
-	ctxb.rotate(tickb * 0.001);
-	var scale = 0.8 + Math.cos(tickb * 0.02) * 0.2;
-	ctxb.scale(scale, scale);
-	ctxb.translate(-xwidth / 2, -xheight / 2);
-	var i = lines.length;
-	while (i--) {
-		lines[i].draw(i);
+	if( $.mouse.down ) {
+		$.tick += 3;
+	} else {
+		$.tick += 1;
 	}
-	ctxb.restore();
-}
+};
 
-function loop() {
-	requestAnimationFrame(loop);
-	create();
-	step();
-	clear();
-	draw();
-	tickb++;
-}
+$.draw = function() {
+	$.ctx.globalCompositeOperation = 'destination-out';
+	$.ctx.fillStyle = 'hsla(0, 0%, 0%, 0.6)';
+	$.ctx.fillRect( 0, 0, $.width, $.height );
+	$.ctx.globalCompositeOperation = 'lighter';
+	$.ctx.save();
+	$.ctx.translate( $.width / 2, $.height / 2 );
+	$.ctx.rotate( $.tick / 300 );
+	var i = $.parts.length;
+	while( i-- ) {
+		$.parts[ i ].draw();
+	}
+	$.ctx.restore();
+};
 
-function onresize() {
-	reset();
-}
+$.loop = function() {
+	requestAnimationFrame( $.loop );
+	$.step();
+	$.draw();
+};
 
-window.addEventListener('resize', onresize);
+$.resize = function() {
+	$.reset();
+};
 
-init();
+$.mousedown = function() {
+	$.mouse.down = 1;
+};
 
+$.mouseup = function() {
+	$.mouse.down = 0;
+};
+
+window.addEventListener( 'resize', $.resize );
+window.addEventListener( 'mousedown', $.mousedown );
+window.addEventListener( 'mouseup', $.mouseup );
+
+$.init();
 </script>
 </DIV>
 
 <DIV class="loee">
-<div STYLE="bottom:40%;position: absolute;left: 50%; transform: translate(-50%,-50%);">
-<H1 STYLE="font-size:2.3em;COLOR:WHITE;">MVP魔兽公会</H1>
-</div>
-<canvas id="logos"></canvas>
+<canvas id="shine"></canvas>
 <script type="text/javascript">
-var txt = "CNMVP.COM";
-var txtH = 90;
-var font = "kaiti";
-var rayColor1 = "RED";
-var rayColor2 = "#FFFFFF";
+var txt = "CNMVP";
+var txtH = 80;
+var font = "sans-serif";
+var rayColor1 = "#FFFFFF";
+var rayColor2 = "yellow";
 var fade = 1000;
-var canvas = document.getElementById("logos");
+var canvas = document.getElementById("shine");
 var ctx = canvas.getContext("2d");
 var cw = canvas.width = window.innerWidth;
 var ch = canvas.height = window.innerHeight;
@@ -534,6 +591,13 @@ function Ray(row, col, f){
 </script>
 </div>
 
+<DIV CLASS="pys">
+<div class="mids">
+  <div id="glow" class="glow disable-animation">
+  </div>
+</div>
+</div>
+
 <DIV class="INTER">
 	<div class="position">
 		<div class="main-box">
@@ -578,6 +642,8 @@ function Ray(row, col, f){
 <DIV class="foot">
   <P>web储存在国外，有些地区连接慢，凑合用，毕竟免费。</BR>Copyright&ensp;©2007-<script>document.write(new Date().getFullYear());</script>&ensp;<a href="https://holynice.com" target="_blank" >Holynice</a>&ensp;,&ensp;All&ensp;Rights&ensp;Reserved.</P>
 </div>
+
+<div style="color:white;z-index:99;position: absolute;top:40%;"><H1>MVP魔兽公会</H1></div>
 
 </body>
 </html>
