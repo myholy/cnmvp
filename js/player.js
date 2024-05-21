@@ -26,21 +26,21 @@ class Musics {
     constructor() {
         this.songs = [{
                 id: 1,
-                title: 'Driving Home for Christmas',
-                singer: 'Campsite Dream',
-                songUrl: './songs/song.mp3',
+                title: 'Its My Life',
+                singer: 'Bon Jovi',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFrMnRHaTJzQjVhM29ZM0tUP2U9U0lvS2hm.mp3',
             },
             {
                 id: 2,
-                title: '认真的雪',
-                singer: '薛之谦',
-                songUrl: './songs/song.mp3',
+				title: 'Nemo',
+                singer: 'Nightwish',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFrMnhmYldtZWd5a3B0SE94P2U9cVRrdjZh.mp3',
             },
             {
                 id: 3,
-                title: '演员',
-                singer: '薛之谦',
-                songUrl: './songs/song.mp3',
+                title: 'Last Breath',
+                singer: 'Norther',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFrMmxIS091T2c1c2ZyalRXP2U9M1BzaXI5.mp3',
             }
         ]
     }
