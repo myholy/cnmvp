@@ -26,27 +26,51 @@ class Musics {
     constructor() {
         this.songs = [{
                 id: 1,
-                title: 'Its My Life',
-                singer: 'Bon Jovi',
+                title: 'Its My Life - Bon Jovi',
+                singer: '当年网吧盗版CS背景音乐',
                 songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFrMnRHaTJzQjVhM29ZM0tUP2U9U0lvS2hm.mp3',
             },
             {
                 id: 2,
-				title: 'Nemo',
-                singer: 'Nightwish',
+				title: 'Nemo - Nightwish',
+                singer: 'T姐经典',
                 songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFrMnhmYldtZWd5a3B0SE94P2U9cVRrdjZh.mp3',
             },
             {
                 id: 3,
-                title: 'Last Breath',
-                singer: 'Norther',
+                title: 'Last Breath - Norther',
+                singer: 'Gameking经典bgm',
                 songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFrMmxIS091T2c1c2ZyalRXP2U9M1BzaXI5.mp3',
             },
             {
                 id: 4,
-                title: 'Numb',
-                singer: 'Link Park',
+                title: 'Numb - Link Park',
+                singer: '2006年第48届格莱美',
                 songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFrMjNraDc2NWNZUjV4QXF5P2U9RnllbnI0.mp3',
+            },
+            {
+                id: 5,
+                title: 'Beyond the game - Alout',
+                singer: 'WCG主题曲',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFrMjRpNWgtUm5YWXo1bGlrP2U9SGJ6MFBv.mp3',
+            },
+            {
+                id: 6,
+                title: '金达莱花 - 战歌',
+                singer: '屠城、奥山、野战PVP专属BGM',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFrMjhuTzBETjRITnVSMEpjP2U9QVpVMGtI.mp3',
+            },
+            {
+                id: 7,
+                title: 'Bye Bye Beautiful - Nightwish',
+                singer: 'A姐经典',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFrM0I3eDRvT2pNWk9fNnZtP2U9NFpJWEJS.mp3',
+            },
+            {
+                id: 8,
+                title: 'Andy - 阿杜',
+                singer: '想到我们的过去，都让人感慨，希望所有好朋友都能站起来',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFrM0V4NUNUczFRSjNKdzVBP2U9ZE1FQkg2.mp3',
             }
         ]
     }
