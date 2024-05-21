@@ -41,6 +41,12 @@ class Musics {
                 title: 'Last Breath',
                 singer: 'Norther',
                 songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFrMmxIS091T2c1c2ZyalRXP2U9M1BzaXI5.mp3',
+            },
+            {
+                id: 4,
+                title: 'Numb',
+                singer: 'Link Park',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFrMjNraDc2NWNZUjV4QXF5P2U9RnllbnI0.mp3',
             }
         ]
     }
@@ -218,7 +224,7 @@ class PlayerCreator {
     }
     //更改按钮样式
     renderPlayMode() {
-        let _classess = ['loop', 'random', 'single'];
+        let _classess = ['random', 'loop', 'single'];
         let _o_i = this.$mode.$el.find('i');
         //prop 改一些标签的自有属性 attr改一些标签的自定义属性
         _o_i.prop('class', 'iconfont icon-' + _classess[this.loop_mode])
@@ -230,11 +236,6 @@ class PlayerCreator {
             this.song_index = type;
         } else {
             if (this.loop_mode === 0) {
-                //列表循环
-                this.song_index += type === 'next' ? 1 : -1;
-                if (this.song_index > this.musics.songs.length - 1) this.song_index = 0;
-                if (this.song_index < 0) this.song_index = this.musics.songs.length - 1;
-            } else if (this.loop_mode === 1) {
                 //随机播放
                 let _length = this.musics.songs.length;
                 let _random = Math.floor(Math.random() * _length);
@@ -246,6 +247,11 @@ class PlayerCreator {
                         break;
                     }
                 }
+            } else if (this.loop_mode === 1) {
+				//列表循环
+                this.song_index += type === 'next' ? 1 : -1;
+                if (this.song_index > this.musics.songs.length - 1) this.song_index = 0;
+                if (this.song_index < 0) this.song_index = this.musics.songs.length - 1;
             } else if (this.loop_mode === 2) {
                 this.song_index = this.song_index;
             }
