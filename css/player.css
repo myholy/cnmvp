@@ -92,12 +92,12 @@
 }
 
 .music__info .music__info--title {
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .music__info .music__info--singer {
     color: #ccc;
-    font-size: 14px;
+    font-size: 15px;
     margin-top: 10px;
 }
 
@@ -134,7 +134,7 @@
     float: left;
     width: 100px;
     position: relative;
-    top: 8px;
+    top: 12px;
 }
 
 .player__song--timeProgess{
