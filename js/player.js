@@ -20,20 +20,20 @@ class Musics {
             {
                 id: 2,
 				title: 'Nemo - Nightwish',
-                singer: 'T姐经典',
-                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFrMnhmYldtZWd5a3B0SE94P2U9cVRrdjZh.mp3',
+                singer: 'Tarja Turunen',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFrMnhmYldtZWd5a3B0SE94P2U9cVRrdjZh.wav',
             },
             {
                 id: 3,
                 title: 'Last Breath - Norther',
-                singer: 'Gameking经典bgm',
+                singer: 'Gameking经典BGM',
                 songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFrMmxIS091T2c1c2ZyalRXP2U9M1BzaXI5.mp3',
             },
             {
                 id: 4,
                 title: 'Numb - Link Park',
                 singer: '2006年第48届格莱美',
-                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFrMjNraDc2NWNZUjV4QXF5P2U9RnllbnI0.mp3',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFrMjNraDc2NWNZUjV4QXF5P2U9RnllbnI0.flac',
             },
             {
                 id: 5,
@@ -51,14 +51,86 @@ class Musics {
             {
                 id: 7,
                 title: 'Bye Bye Beautiful - Nightwish',
-                singer: 'A姐经典',
-                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFrM0I3eDRvT2pNWk9fNnZtP2U9NFpJWEJS.mp3',
+                singer: 'Anette Olzon',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFrM0I3eDRvT2pNWk9fNnZtP2U9NFpJWEJS.flac',
             },
             {
                 id: 8,
                 title: 'Andy - 阿杜',
                 singer: '想到我们的过去，都让人感慨，希望所有好朋友都能站起来',
                 songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFrM0V4NUNUczFRSjNKdzVBP2U9ZE1FQkg2.flac',
+            },
+            {
+                id: 9,
+                title: 'Nothings Gonna Stop Us Now - Starship',
+                singer: '林大爷？',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsQjFWRVpoU3NTY2t3bTg2P2U9VlAwQ0hu.wav',
+            },
+            {
+                id: 10,
+                title: 'She Is My Sin - Nightwish',
+                singer: 'Tarja Turunen',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsQnZsS01fUVIwWWwzbTZKP2U9T1V2QXFP.flac',
+            },
+            {
+                id: 11,
+                title: '特斯河之赞 - 九宝乐队',
+                singer: '重新录制版',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsQ0c1dHQ2TFBCTGIxTlVlP2U9RlJGaXJT.flac',
+            },
+            {
+                id: 12,
+                title: 'New Boy - 朴树',
+                singer: '轻松一下windows98',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsQ0N1RmRkUWN1UnhLNTV0P2U9SFJENDQ0.wav',
+            },
+            {
+                id: 13,
+                title: 'A New Day Has Come - Céline Dion',
+                singer: 'Radio Remix',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsRDZvYURNczdvak04dVZoP2U9Z2FXdlZD.flac',
+            },
+            {
+                id: 14,
+                title: 'Boulevard Of Broken Dreams - Green Day',
+                singer: '2006年第48届格莱美',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsQjd6ZG4zYXkxY0NaN3BzP2U9MzdZZWJJ.flac',
+            },
+            {
+                id: 15,
+                title: '夜曲 - 周杰伦',
+                singer: '夜曲一响,上台领奖',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsQndhbllLcWdhSW1JTGlNP2U9WDR5YzRF.flac',
+            },
+            {
+                id: 16,
+                title: 'Stronger - Inez',
+                singer: '冰河时代',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsQ1RxNW5MdWE5OUlzYmZIP2U9d2pRWW1s.flac',
+            },
+            {
+                id: 17,
+                title: 'Ymca - Village People',
+                singer: 'MAGA?',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsQ01Eb2ZhYlN5dU5OUTdVP2U9cWtnNU15.mp3',
+            },
+            {
+                id: 18,
+                title: 'Careless Whisper - Sam Levine',
+                singer: '第一支访问中国的西方流行乐队',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsQ1k0WmRBTGJiQ3FnRXdfP2U9WHFmZFY2.mp3',
+            },
+            {
+                id: 19,
+                title: 'Just Blue - Space',
+                singer: '春天到了，万物复苏 大草原又到了动物们交配的季节……”',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsQ2MyS1ZzdnBfbHJTODI5P2U9WE5ScnpZ.mp3',
+            },
+            {
+                id: 20,
+                title: 'I Hate Myself For Loving You - Joan Jett',
+                singer: 'Up Your Alley',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsRHZSc2hrSDdiZUQ0dzNaP2U9ZnpMWExh.mp3',
             }
         ]
     }
