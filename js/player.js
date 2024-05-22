@@ -13,9 +13,9 @@ class Musics {
     constructor() {
         this.songs = [{
                 id: 1,
-                title: 'Its My Life - Bon Jovi',
-                singer: '当年网吧盗版CS背景音乐',
-                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFrMnRHaTJzQjVhM29ZM0tUP2U9U0lvS2hm.mp3',
+                title: 'Beyond the game - Alout',
+                singer: 'WCG主题曲',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFrMjRpNWgtUm5YWXo1bGlrP2U9SGJ6MFBv.mp3',
             },
             {
                 id: 2,
@@ -37,9 +37,10 @@ class Musics {
             },
             {
                 id: 5,
-                title: 'Beyond the game - Alout',
-                singer: 'WCG主题曲',
-                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFrMjRpNWgtUm5YWXo1bGlrP2U9SGJ6MFBv.mp3',
+				title: 'Its My Life - Bon Jovi',
+                singer: '当年网吧盗版CS背景音乐',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFrMnRHaTJzQjVhM29ZM0tUP2U9U0lvS2hm.wav',
+                
             },
             {
                 id: 6,
@@ -57,7 +58,7 @@ class Musics {
                 id: 8,
                 title: 'Andy - 阿杜',
                 singer: '想到我们的过去，都让人感慨，希望所有好朋友都能站起来',
-                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFrM0V4NUNUczFRSjNKdzVBP2U9ZE1FQkg2.mp3',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFrM0V4NUNUczFRSjNKdzVBP2U9ZE1FQkg2.flac',
             }
         ]
     }
