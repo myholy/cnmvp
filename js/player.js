@@ -123,7 +123,7 @@ class Musics {
             {
                 id: 19,
                 title: 'Just Blue - Space',
-                singer: '大草原又到了动物们交配的季节……”',
+                singer: '大草原又到了动物们交配的季节……',
                 songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsQ2MyS1ZzdnBfbHJTODI5P2U9WE5ScnpZ.mp3',
             },
             {
