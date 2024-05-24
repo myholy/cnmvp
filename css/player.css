@@ -112,7 +112,6 @@
         transform: rotate(360deg);
     }
 }
-
 @keyframes disc {
     from {
         -webkit-transform: rotate(0deg);
@@ -176,3 +175,15 @@
 ul.sticky li {
     background-color: rgba(255, 255, 255, 0.03);
 }
+body {
+    margin: 0;
+	padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+h1, h2, h3,h4, h5, h6, p, ul, li {
+    margin: 0;
+	padding: 0;
+}
+li { list-style: none; }
