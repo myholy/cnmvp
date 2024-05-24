@@ -116,9 +116,9 @@ class Musics {
             },
             {
                 id: 18,
-                title: 'Careless Whisper - Sam Levine',
+                title: 'Careless Whisper - Wham!',
                 singer: '第一支访问中国的西方流行乐队',
-                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsQ1k0WmRBTGJiQ3FnRXdfP2U9WHFmZFY2.mp3',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsQ1k0WmRBTGJiQ3FnRXdfP2U9WHFmZFY2.flac',
             },
             {
                 id: 19,
