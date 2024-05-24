@@ -130,7 +130,7 @@ class Musics {
                 id: 20,
                 title: 'I Hate Myself For Loving You - Joan Jett',
                 singer: 'Up Your Alley',
-                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsRHZSc2hrSDdiZUQ0dzNaP2U9ZnpMWExh.mp3',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsRHZSc2hrSDdiZUQ0dzNaP2U9ZnpMWExh.flac',
             }
         ]
     }
