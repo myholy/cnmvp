@@ -149,7 +149,6 @@ class PlayerCreator {
         this.loop_mode = 0; // 1 2
         // 下方歌曲列表容器
         this.song_list = $('.music__list_content');
-
         this.render_doms = { //切换歌曲时需要渲染的dom组
             title: $('.music__info--title'),
             singer: $('.music__info--singer')
