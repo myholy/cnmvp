@@ -191,6 +191,36 @@ class Musics {
                 title: 'DotA - Basshunter',
                 singer: 'Radio Edit',
                 songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsRUhfeVlxeXdNUURzRk5BP2U9dW9UVG1i.flac',
+            },
+            {
+                id: 31,
+                title: 'La La Love On My Mind - Ann Winsborn',
+                singer: '',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsQ2hnWEJmODl2NVBJamhEP2U9U1VjYm9O.mp3',
+            },
+            {
+                id: 32,
+                title: 'Go West - Pet Shop Boys',
+                singer: '1992 12'' Mix',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsQzFmTXJuamM1SDVUYXhqP2U9bmNnaDFH.mp3',
+            },
+            {
+                id: 33,
+                title: 'Salt - Ava Max',
+                singer: '',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsREJ4Wmgtam9RLXZndDY4P2U9cG9VNHEx.mp3',
+            },
+            {
+                id: 34,
+                title: '无地自容 - 黑豹乐队',
+                singer: '',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsRVBaV1B2WHhTWTdnYjI2P2U9cWc4THFi.flac',
+            },
+            {
+                id: 35,
+                title: 'Hey Oh - Tragédie',
+                singer: '',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsREtvNmxBV3Q0YzE2WGo3P2U9RHNkYkVz.mp3',
             }
         ]
     }
@@ -202,14 +232,12 @@ class PlayerCreator {
     constructor() {
         this.audio = document.querySelector('.music-player__audio')
         this.audio.volume = 0.5;
-        //工具
         this.util = new Util();
-        this.musics = new Musics(); //歌曲信息
-        this.song_index = 0; // 当前播放的歌曲索引
-        this.loop_mode = 0; // 1 2
-        // 下方歌曲列表容器
+        this.musics = new Musics();
+        this.song_index = 0;
+        this.loop_mode = 0;
         this.song_list = $('.music__list_content');
-        this.render_doms = { //切换歌曲时需要渲染的dom组
+        this.render_doms = {
             title: $('.music__info--title'),
             singer: $('.music__info--singer')
         }
@@ -227,7 +255,6 @@ class PlayerCreator {
         this.renderSongStyle();
         this.bindEventListener();
     }
-    //生成播放列表
     renderSongList() {
         let _str = '';
         this.musics.songs.forEach((song, i) => {
@@ -235,8 +262,6 @@ class PlayerCreator {
         });
         this.song_list.html(_str);
     }
-
-    //根据歌曲去渲染视图
     renderSongStyle() {
         let {
             title,
@@ -264,7 +289,6 @@ class PlayerCreator {
         this.$ban = new Btns('.control__volume--icon', {
             click: this.banNotes.bind(this)
         })
-        //列表点击
         this.song_list.on('click', 'li', (e) => {
             let index = $(e.target).index();
             this.changeSong(index);
