@@ -709,6 +709,10 @@ canvas {
   padding: 20px;
   margin: 10px;
 }
+.haimg {
+  padding: 5px;
+  margin: 10px;
+}
 .booking-form {
   padding: 55px 65px;
 }

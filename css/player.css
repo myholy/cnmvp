@@ -129,7 +129,7 @@
 	margin: 1%;
 }
 .music-player__list {
-    width: 320px;
+    max-width: 380px;
     margin-top: 15px !important;
 	height: 260px;
 	overflow-y: auto;
@@ -142,7 +142,7 @@
 	padding-right: 5px;
 }
 .music-player__list::-webkit-scrollbar {
-    width: 5px;
+    width: 8px;
 }
 .music-player__list::-webkit-scrollbar-track {
 	background: rgba(255, 255, 255, 0.2);
