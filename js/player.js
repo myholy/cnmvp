@@ -195,31 +195,31 @@ class Musics {
             {
                 id: 31,
                 title: 'La La Love On My Mind - Ann Winsborn',
-                singer: '',
+                singer: '.',
                 songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsQ2hnWEJmODl2NVBJamhEP2U9U1VjYm9O.mp3',
             },
             {
                 id: 32,
                 title: 'Go West - Pet Shop Boys',
-                singer: '1992 12'' Mix',
+                singer: '1992 12 Mix',
                 songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsQzFmTXJuamM1SDVUYXhqP2U9bmNnaDFH.mp3',
             },
             {
                 id: 33,
                 title: 'Salt - Ava Max',
-                singer: '',
+                singer: '.',
                 songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsREJ4Wmgtam9RLXZndDY4P2U9cG9VNHEx.mp3',
             },
             {
                 id: 34,
                 title: '无地自容 - 黑豹乐队',
-                singer: '',
+                singer: '.',
                 songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsRVBaV1B2WHhTWTdnYjI2P2U9cWc4THFi.flac',
             },
             {
                 id: 35,
                 title: 'Hey Oh - Tragédie',
-                singer: '',
+                singer: '.',
                 songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsREtvNmxBV3Q0YzE2WGo3P2U9RHNkYkVz.mp3',
             }
         ]
