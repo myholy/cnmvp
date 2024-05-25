@@ -124,13 +124,73 @@ class Musics {
                 id: 19,
                 title: 'Just Blue - Space',
                 singer: '大草原又到了动物们交配的季节……',
-                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsQ2MyS1ZzdnBfbHJTODI5P2U9WE5ScnpZ.mp3',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsQ2MyS1ZzdnBfbHJTODI5P2U9WE5ScnpZ.flac',
             },
             {
                 id: 20,
                 title: 'I Hate Myself For Loving You - Joan Jett',
                 singer: 'Up Your Alley',
                 songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsRHZSc2hrSDdiZUQ0dzNaP2U9ZnpMWExh.flac',
+            },
+            {
+                id: 21,
+                title: 'Aloha Heja He - Achim Reichel',
+                singer: '加油',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsRUFISmVpZXh3TERaQk16P2U9RWRrMDR5.flac',
+            },
+            {
+                id: 22,
+                title: 'MY ALL - 浜崎あゆみ',
+                singer: '滨崎步',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsRFhaWk9LblVMalU4WHpoP2U9T1NUVmtD.mp3',
+            },
+            {
+                id: 23,
+                title: 'What Is Love - Haddaway',
+                singer: 'Up Your Alley',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsQ25kOFVQNm5SVzFKcVJkP2U9Vm96R2tj.mp3',
+            },
+            {
+                id: 24,
+                title: 'Dear John - 比莉',
+                singer: '你的爱，像是备胎弄的咖啡',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsRGpwc2lnRzVmTWtwTlpkP2U9dmJGUU5v.flac',
+            },
+            {
+                id: 25,
+                title: 'Days of my past - Rose Wong _ Max Lu',
+                singer: '童年',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsQ3YxWUF5MEhuQWJnQjdhP2U9TmVwMVpP.mp3',
+            },
+            {
+                id: 26,
+                title: 'Love Is Free - Noble',
+                singer: '我的未来不是梦',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsRGZaSWFxTkpfeDlzX1p4P2U9RFdGMmtp.mp3',
+            },
+            {
+                id: 27,
+                title: 'Gone Too Far - Noble',
+                singer: '是否我真的一无所有',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsRHE4Q2dRUlJOSWFPUTgtP2U9dkRsYnhS.mp3',
+            },
+            {
+                id: 28,
+                title: 'betrayal - Jus Allah',
+                singer: '黄昏',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsQzVrcC1yNmVwSTBMTHNDP2U9MkQyYk9k.mp3',
+            },
+            {
+                id: 29,
+                title: 'Casablanca - Bertie Higgins',
+                singer: '卡萨布兰卡',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsRGxCNm9ZZDhCVXJkdE5xP2U9RkpiUTRW.flac',
+            },
+            {
+                id: 30,
+                title: 'DotA - Basshunter',
+                singer: 'Radio Edit',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsRUhfeVlxeXdNUURzRk5BP2U9dW9UVG1i.flac',
             }
         ]
     }
