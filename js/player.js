@@ -221,6 +221,36 @@ class Musics {
                 title: 'Hey Oh - Tragédie',
                 singer: '.',
                 songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsREtvNmxBV3Q0YzE2WGo3P2U9RHNkYkVz.mp3',
+            },
+            {
+                id: 36,
+                title: 'Take My Breath Away - Berlin',
+                singer: '.',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsRGJfREdkeUtONEMyVi1MP2U9MHpMdlVX.mp3',
+            },
+            {
+                id: 37,
+                title: 'The Riddle - Prezioso & Marvin',
+                singer: 'Radio Edit',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsQ3J0eGhhNnhmXzZGNHJPP2U9WWd5WWh1.mp3',
+            },
+            {
+                id: 38,
+                title: '谢谢你的爱1999 - 谢霆锋',
+                singer: '.',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsRVFlanFlbzA4dnJ3OFd1P2U9NjdPMXFL.flac',
+            },
+            {
+                id: 39,
+                title: 'Geordie - Gabry Ponte',
+                singer: '.',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsRE1IRDRmM01VRy1YaWhMP2U9eGN3YWpi.mp3',
+            },
+            {
+                id: 40,
+                title: 'That Girl-Olly Murs',
+                singer: '.',
+                songUrl: 'https://dlink.host/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBaWNJLXpINndhOWFsRHc3aVJXVjNwd0RHdHpTP2U9ekhIVWJy.mp3',
             }
         ]
     }
