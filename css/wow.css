@@ -317,7 +317,10 @@ canvas {
 .navbar-brand-image {
   width: 48px;
   height: auto;
-  margin-right: 10px;
+  margin-right: 2px;
+}
+.navbar-branda {
+  padding-right: 25px;
 }
 .navbar .custom-btn {
   padding: 10px 20px;
