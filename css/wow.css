@@ -33,6 +33,7 @@
 body {
   background-color: var(--reviews-color);
   font-family: var(--body-font-family); 
+  z-index: -999;
 }
 /*---------------------------------------
   TYPOGRAPHY               
