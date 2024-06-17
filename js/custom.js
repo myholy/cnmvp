@@ -1,13 +1,10 @@
 
   (function ($) {
-  
   "use strict";
-
     // NAVBAR
     $('.navbar-collapse a').on('click',function(){
       $(".navbar-collapse").collapse('hide');
     });
-
     $(function() {
       $('.menu-section').vegas({
           slides: [
@@ -18,7 +15,6 @@
           animation: 'kenburns',
       });
     });
-    
     // CUSTOM LINK
     $('.smoothscroll').click(function(){
       var el = $(this).attr('href');
@@ -38,7 +34,6 @@
         }, 300);
       }
     });
-  
   })(window.jQuery);
 
 
