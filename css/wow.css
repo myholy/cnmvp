@@ -675,7 +675,7 @@ canvas {
   border-top-color: rgba(255, 255, 255, 0.35) !important;
 }
 .reviews-block-image-wrap {
-  background-image: url('https://nie.res.netease.com/r/pic/20240605/715b096e-6f1f-4e83-bfb2-cdeda8465b47.jpg');
+  background-image: url('https://ld1.res.netease.com/pc/zt/20240528174548/assets/message-bg_a8ae50d9.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -695,8 +695,9 @@ canvas {
   BOOKING SECTION              
 -----------------------------------------*/
 .booking-section {
-/*-  background-image: url('https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/U6GPDHSY9JN01589912855861.jpg'); 部落-*/
-  background-image: url('https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/VHAUMBN792L91589912865216.jpg');
+/*-  background-image: url('https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/U6GPDHSY9JN01589912855861.jpg'); 部落
+  background-image: url('https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/VHAUMBN792L91589912865216.jpg'); 联盟 -*/
+  background-image: url('https://nie.res.netease.com/r/pic/20240605/715b096e-6f1f-4e83-bfb2-cdeda8465b47.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
