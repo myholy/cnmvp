@@ -11,8 +11,8 @@
     $(function() {
       $('.menu-section').vegas({
           slides: [
-              { src: 'https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/U6GPDHSY9JN01589912855861.jpg' },
-			  { src: 'https://bnetcmsus-a.akamaihd.net/cms/content_entry_media/U6GPDHSY9JN01589912855861.jpg' },
+              { src: 'https://nie.res.netease.com/r/pic/20240605/715b096e-6f1f-4e83-bfb2-cdeda8465b47.jpg' },
+			  { src: 'https://nie.res.netease.com/r/pic/20240605/715b096e-6f1f-4e83-bfb2-cdeda8465b47.jpg' },
           ],
           timer: false,
           animation: 'kenburns',
