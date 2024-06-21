@@ -3,12 +3,10 @@
 -----------------------------------------*/
 :root {
   --white-color:                  #ffffff;
-  --primary-color:                #00ccff;	/*S ff5500*/
-  --secondary-color:              #009aff;	/*Q ff8c00*/
-  --custom-btn-bg-color:          #00ccff;
-  --custom-btn-bg-hover-color:    #009aff;
+  --primary-color:                #009aff;	/*S ff5500*/
+  --secondary-color:              #00ccff;	/*Q ff8c00*/
+  --custom-btn-bg-color:          #ff8c00;
   --bac-color:                    #717275;
-  --link-hover-color:             #009aff;
   --reviews-color:                #00000f;
   --body-font-family:             'Plus Jakarta Sans', sans-serif;
   --h1-font-size:                 50px;
@@ -98,7 +96,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: var(--link-hover-color);
+  color: var(--secondary-color);
 }
 b,
 strong {
@@ -165,7 +163,7 @@ canvas {
   height: 25px;
   right: -12px;
   background-color: var(--white-color);
-  border: 5px solid #7c5c52;
+  border: 5px solid #009aff;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -235,7 +233,7 @@ canvas {
   CUSTOM BUTTON               
 -----------------------------------------*/
 .custom-btn {
-  background: var(--custom-btn-bg-color);
+  background: var(--primary-color);
   border: 2px solid transparent;
   border-radius: var(--border-radius-large);
   color: var(--white-color);
@@ -246,15 +244,15 @@ canvas {
   padding: 12px 28px;
 }
 .custom-btn:hover {
-  background: var(--custom-btn-bg-hover-color);
+  background: var(--secondary-color);
   color: var(--white-color);
 }
 .btn:active {
-  background: var(--custom-btn-bg-hover-color) !important;
+  background: var(--secondary-color) !important;
   color: var(--white-color) !important;
 }
 .custom-btn:active {
-  background: var(--custom-btn-bg-hover-color) !important;
+  background: var(--secondary-color) !important;
   color: var(--white-color) !important;
 }
 .custom-border-btn:active {
@@ -377,7 +375,7 @@ canvas {
 .navbar .dropdown-item:focus, 
 .navbar .dropdown-item:hover {
   background: transparent;
-  color: var(--link-hover-color);
+  color: var(--secondary-color);
 }
 .navbar .dropdown-toggle::after {
   content: "\f282";
@@ -739,7 +737,7 @@ canvas {
 }
 /*---------------------------------------
   CUSTOM FORM               
------------------------------------------*/
+
 .custom-form .form-control {
   color: var(--white-color);
   border-radius: var(--border-radius-small);
@@ -791,7 +789,8 @@ canvas {
 .booking-form input:-moz-placeholder,
 .booking-form textarea:-moz-placeholder {
   color: var(--white-color);
-}
+}-----------------------------------------*/
+
 /*---------------------------------------
   SOCIAL ICON               
 -----------------------------------------*/
