@@ -92,11 +92,11 @@ button {
 }
 a {
   display: inline-block;
-  color: var(--primary-color);
+  color: var(--secondary-color);
   text-decoration: none;
 }
 a:hover {
-  color: var(--secondary-color);
+  color: var(--primary-color);
 }
 b,
 strong {
