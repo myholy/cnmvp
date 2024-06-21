@@ -3,8 +3,8 @@
 -----------------------------------------*/
 :root {
   --white-color:                  #ffffff;
-  --primary-color:                #009aff;	/*S ff5500*/
-  --secondary-color:              #00ccff;	/*Q ff8c00*/
+  --primary-color:                #009aff;	/*深 ff5500*/
+  --secondary-color:              #00ccff;	/*浅 ff8c00*/
   --custom-btn-bg-color:          #ff8c00;
   --bac-color:                    #717275;
   --reviews-color:                #00000f;
@@ -793,7 +793,7 @@ canvas {
 
 /*---------------------------------------
   SOCIAL ICON               
------------------------------------------*/
+
 .social-icon {
   margin: 0;
   padding: 0;
@@ -823,6 +823,8 @@ canvas {
 .social-icon-link span {
   display: block;
 }
+
+-----------------------------------------*/
 /*---------------------------------------
   RESPONSIVE STYLES               
 -----------------------------------------*/
