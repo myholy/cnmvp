@@ -3,9 +3,9 @@
 -----------------------------------------*/
 :root {
   --white-color:                  #ffffff;
-  --primary-color:                #0788A9;	/*S ff5500*/
+  --primary-color:                #00bbff;	/*S ff5500*/
   --secondary-color:              #0cf;	/*Q ff8c00*/
-  --custom-btn-bg-color:          #0788A9;
+  --custom-btn-bg-color:          #00bbff;
   --custom-btn-bg-hover-color:    #0cf;
   --bac-color:                    #717275;
   --link-hover-color:             #0cf;
