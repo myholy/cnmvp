@@ -3,12 +3,12 @@
 -----------------------------------------*/
 :root {
   --white-color:                  #ffffff;
-  --primary-color:                #00aaff;	/*S ff5500*/
-  --secondary-color:              #0cf;	/*Q ff8c00*/
-  --custom-btn-bg-color:          #00aaff;
-  --custom-btn-bg-hover-color:    #0cf;
+  --primary-color:                #00ccff;	/*S ff5500*/
+  --secondary-color:              #009aff;	/*Q ff8c00*/
+  --custom-btn-bg-color:          #00ccff;
+  --custom-btn-bg-hover-color:    #009aff;
   --bac-color:                    #717275;
-  --link-hover-color:             #0cf;
+  --link-hover-color:             #009aff;
   --reviews-color:                #00000f;
   --body-font-family:             'Plus Jakarta Sans', sans-serif;
   --h1-font-size:                 50px;
