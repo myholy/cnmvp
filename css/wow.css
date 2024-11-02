@@ -468,8 +468,11 @@ canvas {
 }
 .tess {
   position:relative;
-  margin-TOP: 140px;
+  margin-TOP: 145px;
   z-index: 9;
+  }
+.ccpp {
+  margin-TOP: 10px;
   }
 .shake-animation {
   bottom: 15px;
